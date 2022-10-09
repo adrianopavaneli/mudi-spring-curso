@@ -12,6 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="users")
 public class User {
+
 	@Id
 	private String username;
 	private String password;
@@ -38,13 +39,6 @@ public class User {
 	public void setEnabled(Boolean enabled) {
 		this.enabled = enabled;
 	}
-	public List<Pedido> getPedidos() {
-		return pedidos;
-	}
-	public void setPedidos(List<Pedido> pedidos) {
-		this.pedidos = pedidos;
-	}
-
 	
-
+	
 }
